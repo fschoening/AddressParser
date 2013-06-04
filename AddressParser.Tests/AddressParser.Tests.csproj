@@ -50,8 +50,19 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="AddressFormatsParseTests.cs" />
+    <Compile Include="AddressParserTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AddressParser.IoCBootstrap\AddressParser.IoCBootstrap.csproj">
+      <Project>{494C1F0D-94F0-443F-81B5-CE680E8F1A86}</Project>
+      <Name>AddressParser.IoCBootstrap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AddressParser.Model\AddressParser.Model.csproj">
+      <Project>{C9598957-293D-4701-9F28-194334BBDC55}</Project>
+      <Name>AddressParser.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

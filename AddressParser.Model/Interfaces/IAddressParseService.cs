@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AddressParser
+namespace AddressParser.Model.Interfaces
 {
-    public class Class1
-    {
-    }
+	public interface IAddressParseService
+	{
+
+	}
 }

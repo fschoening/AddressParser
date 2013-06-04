@@ -5,7 +5,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressParser.Tests", "AddressParser.Tests\AddressParser.Tests.csproj", "{F9B346FB-4D85-4A6F-8892-923BC05CF656}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressParser", "AddressParser\AddressParser.csproj", "{284E3F8D-CACA-4876-B6CB-ABC42C750767}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressParser.Model", "AddressParser.Model\AddressParser.Model.csproj", "{C9598957-293D-4701-9F28-194334BBDC55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressParser.IoCBootstrap", "AddressParser.IoCBootstrap\AddressParser.IoCBootstrap.csproj", "{494C1F0D-94F0-443F-81B5-CE680E8F1A86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressParser.Impl", "AddressParser.Impl\AddressParser.Impl.csproj", "{284E3F8D-CACA-4876-B6CB-ABC42C750767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTester", "ConsoleTester\ConsoleTester.csproj", "{3EB4BB62-18EE-43D9-992A-40B0FD7938C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +23,22 @@ Global
 		{F9B346FB-4D85-4A6F-8892-923BC05CF656}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9B346FB-4D85-4A6F-8892-923BC05CF656}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9B346FB-4D85-4A6F-8892-923BC05CF656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9598957-293D-4701-9F28-194334BBDC55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9598957-293D-4701-9F28-194334BBDC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9598957-293D-4701-9F28-194334BBDC55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9598957-293D-4701-9F28-194334BBDC55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{494C1F0D-94F0-443F-81B5-CE680E8F1A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494C1F0D-94F0-443F-81B5-CE680E8F1A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494C1F0D-94F0-443F-81B5-CE680E8F1A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494C1F0D-94F0-443F-81B5-CE680E8F1A86}.Release|Any CPU.Build.0 = Release|Any CPU
 		{284E3F8D-CACA-4876-B6CB-ABC42C750767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{284E3F8D-CACA-4876-B6CB-ABC42C750767}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{284E3F8D-CACA-4876-B6CB-ABC42C750767}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{284E3F8D-CACA-4876-B6CB-ABC42C750767}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EB4BB62-18EE-43D9-992A-40B0FD7938C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB4BB62-18EE-43D9-992A-40B0FD7938C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EB4BB62-18EE-43D9-992A-40B0FD7938C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EB4BB62-18EE-43D9-992A-40B0FD7938C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
