@@ -12,8 +12,19 @@ namespace AddressParser.Impl.Parsing
     {
 		public DanishAddress ParseAddress(string assertedAddress)
 		{
-			//var match = 
-			return null;
+			var match = Regexes.ImmaParseAnAddress.Match(assertedAddress);
+
+			if (!match.Success)
+				return null;
+
+			var add = new DanishAddress();
+			add.StreetName = match.Groups["StreetName"].Value;
+			add.HouseNumber = int.Parse(match.Groups["HouseNumber"].Value);
+
+			var houseletter = match.Groups["HouseLetter"].Value;
+			add.HouseLetter = houseletter;
+
+			return add;
 		}
     }
 }

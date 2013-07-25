@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="AddressTypes\DanishAddress.cs" />
     <Compile Include="AddressTypes\TestAddress.cs" />
+    <Compile Include="ApartmentSide.cs" />
     <Compile Include="Exceptions\ParseException.cs" />
     <Compile Include="Interfaces\IAddressParseService.cs" />
     <Compile Include="Interfaces\ITestDataLoader.cs" />

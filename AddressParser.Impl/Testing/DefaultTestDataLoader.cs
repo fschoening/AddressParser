@@ -30,8 +30,8 @@ namespace AddressParser.Impl.Testing
 
 					var testAddress = new TestAddress
 						{
-							Address1 = match.Groups["Address1"].Value,
-							Address2 = match.Groups["Address2"].Value
+							AddressString1 = match.Groups["Address1"].Value,
+							AddressString2 = match.Groups["Address2"].Value
 						};
 
 					testAddresses.Add(testAddress);

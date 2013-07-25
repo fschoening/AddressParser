@@ -6,5 +6,7 @@
 		public int HouseNumber { get; set; }
 		public string HouseLetter { get; set; }
 		public int? Floor { get; set; }
+		public ApartmentSide? Side { get; set; }
+		public int? DoorOrRoomNo { get; set; }
 	}
 }
