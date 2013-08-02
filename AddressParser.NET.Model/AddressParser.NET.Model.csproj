@@ -42,7 +42,7 @@
     <Compile Include="AddressTypes\DanishAddress.cs" />
     <Compile Include="AddressTypes\TestAddress.cs" />
     <Compile Include="ApartmentSide.cs" />
-    <Compile Include="Exceptions\ParseException.cs" />
+    <Compile Include="Exceptions\AddressParseException.cs" />
     <Compile Include="Interfaces\IAddressParseService.cs" />
     <Compile Include="Interfaces\ITestDataLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

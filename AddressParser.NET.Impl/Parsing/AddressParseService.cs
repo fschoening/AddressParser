@@ -1,25 +1,28 @@
-﻿using AddressParser.NET.Model.AddressTypes;
+﻿using System;
+using AddressParser.NET.Model.AddressTypes;
+using AddressParser.NET.Model.Exceptions;
 using AddressParser.NET.Model.Interfaces;
 
 namespace AddressParser.NET.Impl.Parsing
 {
-    public class AddressParseService : IAddressParseService
-    {
+	public class AddressParseService : IAddressParseService
+	{
 		public DanishAddress ParseAddress(string addressString)
 		{
 			var match = Regexes.ImmaParseAnAddress.Match(addressString);
 
 			if (!match.Success)
-				return null;
+				throw new AddressParseException("Address '{0}' does not appear to be a valid Danish address.");
 
 			var add = new DanishAddress();
 			add.StreetName = match.Groups["StreetName"].Value;
 			add.HouseNumber = int.Parse(match.Groups["HouseNumber"].Value);
 
 			var houseletter = match.Groups["HouseLetter"].Value;
-			add.HouseLetter = houseletter;
+			if (!string.IsNullOrEmpty(houseletter))
+				add.HouseLetter = houseletter;
 
 			return add;
 		}
-    }
+	}
 }

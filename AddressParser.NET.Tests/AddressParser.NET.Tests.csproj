@@ -50,7 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AddressFormatsParseTests.cs" />
+    <Compile Include="AddressFormatsParseTestsSimple.cs" />
     <Compile Include="AddressParserTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
