@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B2602DF8-7D80-43F4-9B36-51F42DCE10A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressParser.Tests", "AddressParser.Tests\AddressParser.Tests.csproj", "{F9B346FB-4D85-4A6F-8892-923BC05CF656}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressParser.NET.Tests", "AddressParser.NET.Tests\AddressParser.NET.Tests.csproj", "{F9B346FB-4D85-4A6F-8892-923BC05CF656}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressParser.Model", "AddressParser.Model\AddressParser.Model.csproj", "{C9598957-293D-4701-9F28-194334BBDC55}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressParser.NET.Model", "AddressParser.NET.Model\AddressParser.NET.Model.csproj", "{C9598957-293D-4701-9F28-194334BBDC55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressParser.IoCBootstrap", "AddressParser.IoCBootstrap\AddressParser.IoCBootstrap.csproj", "{494C1F0D-94F0-443F-81B5-CE680E8F1A86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressParser.NET.IoCBootstrap", "AddressParser.NET.IoCBootstrap\AddressParser.NET.IoCBootstrap.csproj", "{494C1F0D-94F0-443F-81B5-CE680E8F1A86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressParser.Impl", "AddressParser.Impl\AddressParser.Impl.csproj", "{284E3F8D-CACA-4876-B6CB-ABC42C750767}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressParser.NET.Impl", "AddressParser.NET.Impl\AddressParser.NET.Impl.csproj", "{284E3F8D-CACA-4876-B6CB-ABC42C750767}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTester", "ConsoleTester\ConsoleTester.csproj", "{3EB4BB62-18EE-43D9-992A-40B0FD7938C6}"
 EndProject

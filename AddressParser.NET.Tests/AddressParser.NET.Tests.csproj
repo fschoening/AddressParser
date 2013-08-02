@@ -55,13 +55,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AddressParser.IoCBootstrap\AddressParser.IoCBootstrap.csproj">
+    <ProjectReference Include="..\AddressParser.NET.IoCBootstrap\AddressParser.NET.IoCBootstrap.csproj">
       <Project>{494C1F0D-94F0-443F-81B5-CE680E8F1A86}</Project>
-      <Name>AddressParser.IoCBootstrap</Name>
+      <Name>AddressParser.NET.IoCBootstrap</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AddressParser.Model\AddressParser.Model.csproj">
+    <ProjectReference Include="..\AddressParser.NET.Model\AddressParser.NET.Model.csproj">
       <Project>{C9598957-293D-4701-9F28-194334BBDC55}</Project>
-      <Name>AddressParser.Model</Name>
+      <Name>AddressParser.NET.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
