@@ -8,5 +8,17 @@
 		public int? Floor { get; set; }
 		public ApartmentSide? Side { get; set; }
 		public int? DoorOrRoomNo { get; set; }
+
+		public override string ToString()
+		{
+			return string.Format("{0};{1};{2};{3};{4};{5};", 
+				StreetName,
+				HouseNumber,
+				HouseLetter,
+				Floor,
+				Side,
+				DoorOrRoomNo
+				);
+		}
 	}
 }

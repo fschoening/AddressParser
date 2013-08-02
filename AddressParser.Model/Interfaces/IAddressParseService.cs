@@ -9,6 +9,6 @@ namespace AddressParser.Model.Interfaces
 {
 	public interface IAddressParseService
 	{
-		DanishAddress ParseAddress(string assertedAddress);
+		DanishAddress ParseAddress(string addressString);
 	}
 }

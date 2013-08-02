@@ -20,7 +20,7 @@ namespace AddressParser.Tests
 
 		protected Dictionary<string, DanishAddress> AddressAssertions { get; set; }
 
-		[TestMethod]
+		//[TestMethod]
 		public void TestParseSampleAddresses()
 		{
 			var testAddresses = Services.DefaultITestDataLoader.GetTestAddresses(@"D:\Schoening.it\_stuff\test_adresser_01.txt");

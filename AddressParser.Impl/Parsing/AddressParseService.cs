@@ -10,9 +10,9 @@ namespace AddressParser.Impl.Parsing
 {
     public class AddressParseService : IAddressParseService
     {
-		public DanishAddress ParseAddress(string assertedAddress)
+		public DanishAddress ParseAddress(string addressString)
 		{
-			var match = Regexes.ImmaParseAnAddress.Match(assertedAddress);
+			var match = Regexes.ImmaParseAnAddress.Match(addressString);
 
 			if (!match.Success)
 				return null;
