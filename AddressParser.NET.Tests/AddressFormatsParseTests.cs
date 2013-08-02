@@ -12,7 +12,7 @@ namespace AddressParser.NET.Tests
 		protected Dictionary<string, DanishAddress> AddressAssertions { get; set; }
 
 		[TestInitialize]
-		public void Init()
+		public void Init()//d'oh.
 		{
 			this.Services = IoCHelper.GetDefaultServices();
 		}
