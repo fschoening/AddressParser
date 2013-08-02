@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using AddressParser.IoCBootstrap;
-using AddressParser.Model.AddressTypes;
+using AddressParser.NET.IoCBootstrap;
+using AddressParser.NET.Model.AddressTypes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AddressParser.Tests
+namespace AddressParser.NET.Tests
 {
 	[TestClass]
 	public class AddressParserTests

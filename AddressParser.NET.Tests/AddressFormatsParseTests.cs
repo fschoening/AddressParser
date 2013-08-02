@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AddressParser.IoCBootstrap;
-using AddressParser.Model.AddressTypes;
+﻿using System.Collections.Generic;
+using AddressParser.NET.IoCBootstrap;
+using AddressParser.NET.Model.AddressTypes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AddressParser.Tests
+namespace AddressParser.NET.Tests
 {
 	[TestClass]
 	public class AddressFormatsParseTests

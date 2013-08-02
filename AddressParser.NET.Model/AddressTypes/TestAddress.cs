@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AddressParser.Model.AddressTypes
+﻿namespace AddressParser.NET.Model.AddressTypes
 {
 	public class TestAddress
 	{

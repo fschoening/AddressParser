@@ -7,8 +7,8 @@
     <ProjectGuid>{494C1F0D-94F0-443F-81B5-CE680E8F1A86}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AddressParser.IoCBootstrap</RootNamespace>
-    <AssemblyName>AddressParser.IoCBootstrap</AssemblyName>
+    <RootNamespace>AddressParser.NET.IoCBootstrap</RootNamespace>
+    <AssemblyName>AddressParser.NET.IoCBootstrap</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AddressParser.Impl.Parsing;
-using AddressParser.Impl.Testing;
-using AddressParser.Model.Interfaces;
+﻿using AddressParser.NET.Impl.Parsing;
+using AddressParser.NET.Impl.Testing;
+using AddressParser.NET.Model.Interfaces;
 using Ninject;
 
-namespace AddressParser.IoCBootstrap
+namespace AddressParser.NET.IoCBootstrap
 {
     public static class IoCHelper
     {

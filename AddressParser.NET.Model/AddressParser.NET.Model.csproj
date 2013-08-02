@@ -7,8 +7,8 @@
     <ProjectGuid>{C9598957-293D-4701-9F28-194334BBDC55}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AddressParser.Model</RootNamespace>
-    <AssemblyName>AddressParser.Model</AssemblyName>
+    <RootNamespace>AddressParser.NET.Model</RootNamespace>
+    <AssemblyName>AddressParser.NET.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

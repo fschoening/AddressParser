@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using AddressParser.Model.AddressTypes;
-using AddressParser.Model.Interfaces;
+using AddressParser.NET.Model.AddressTypes;
+using AddressParser.NET.Model.Interfaces;
 
-namespace AddressParser.Impl.Testing
+namespace AddressParser.NET.Impl.Testing
 {
 	public class DefaultTestDataLoader : ITestDataLoader
 	{

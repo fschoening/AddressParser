@@ -4,8 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AddressParser.IoCBootstrap;
-using AddressParser.Model.AddressTypes;
+using AddressParser.NET.IoCBootstrap;
+using AddressParser.NET.Model.AddressTypes;
 
 namespace ConsoleTester
 {

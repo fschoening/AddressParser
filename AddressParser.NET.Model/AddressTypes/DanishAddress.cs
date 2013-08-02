@@ -1,4 +1,4 @@
-﻿namespace AddressParser.Model.AddressTypes
+﻿namespace AddressParser.NET.Model.AddressTypes
 {
 	public class DanishAddress
 	{

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AddressParser.Model.AddressTypes;
+﻿using AddressParser.NET.Model.AddressTypes;
 
-namespace AddressParser.Model.Interfaces
+namespace AddressParser.NET.Model.Interfaces
 {
 	public interface IAddressParseService
 	{

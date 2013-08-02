@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AddressParser.Model.Interfaces;
+﻿using AddressParser.NET.Model.Interfaces;
 
-namespace AddressParser.IoCBootstrap
+namespace AddressParser.NET.IoCBootstrap
 {
 	public class ServiceWrapper
 	{
