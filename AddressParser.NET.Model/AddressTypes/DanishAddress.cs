@@ -16,9 +16,9 @@ namespace AddressParser.NET.Model.AddressTypes
 			if (ReferenceEquals(null, other)) return false;
 			if (ReferenceEquals(this, other)) return true;
 			return
-				string.Equals(StreetName, other.StreetName)
+				string.Equals(StreetName, other.StreetName, StringComparison.InvariantCultureIgnoreCase)
 				&& HouseNumber == other.HouseNumber
-				&& string.Equals(HouseLetter, other.HouseLetter)
+				&& string.Equals(HouseLetter, other.HouseLetter, StringComparison.InvariantCultureIgnoreCase)
 				&& Floor == other.Floor
 				&& Side == other.Side
 				&& DoorOrRoomNo == other.DoorOrRoomNo;
