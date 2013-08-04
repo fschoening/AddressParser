@@ -89,5 +89,35 @@ namespace AddressParser.NET.Tests
 
 			Assert.AreEqual(assertedAddress, testAddress);
 		}
+
+		[TestMethod]
+		public void SimpleAddressWithHouseLetter()
+		{
+			const string testAddressString = "Test Vej 10A";
+			var testAddress = Services.DefaultIAddressParseService.ParseAddress(testAddressString);
+			var assertedAddress = new DanishAddress
+			{
+				StreetName = "Test Vej",
+				HouseNumber = 10,
+				HouseLetter = "a"
+			};
+
+			Assert.AreEqual(assertedAddress, testAddress);
+		}
+
+		[TestMethod]
+		public void SimpleAddressWithHouseLetterAfterSpace()
+		{
+			const string testAddressString = "Test Vej 10 a";
+			var testAddress = Services.DefaultIAddressParseService.ParseAddress(testAddressString);
+			var assertedAddress = new DanishAddress
+			{
+				StreetName = "Test Vej",
+				HouseNumber = 10,
+				HouseLetter = "a"
+			};
+
+			Assert.AreEqual(assertedAddress, testAddress);
+		}
 	}
 }

@@ -15,7 +15,13 @@ namespace AddressParser.NET.Model.AddressTypes
 		{
 			if (ReferenceEquals(null, other)) return false;
 			if (ReferenceEquals(this, other)) return true;
-			return string.Equals(StreetName, other.StreetName) && HouseNumber == other.HouseNumber && string.Equals(HouseLetter, other.HouseLetter) && Floor == other.Floor && Side == other.Side && DoorOrRoomNo == other.DoorOrRoomNo;
+			return
+				string.Equals(StreetName, other.StreetName)
+				&& HouseNumber == other.HouseNumber
+				&& string.Equals(HouseLetter, other.HouseLetter)
+				&& Floor == other.Floor
+				&& Side == other.Side
+				&& DoorOrRoomNo == other.DoorOrRoomNo;
 		}
 
 		public override bool Equals(object obj)

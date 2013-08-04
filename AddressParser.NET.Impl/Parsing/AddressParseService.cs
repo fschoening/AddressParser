@@ -2,6 +2,7 @@
 using AddressParser.NET.Model.AddressTypes;
 using AddressParser.NET.Model.Exceptions;
 using AddressParser.NET.Model.Interfaces;
+using AddressParser.NET.Core.Extensions;
 
 namespace AddressParser.NET.Impl.Parsing
 {
@@ -15,12 +16,14 @@ namespace AddressParser.NET.Impl.Parsing
 				throw new AddressParseException("Address '{0}' does not appear to be a valid Danish address.");
 
 			var add = new DanishAddress();
-			add.StreetName = match.Groups["StreetName"].Value;
+			add.StreetName = match.Groups["StreetName"].Value
+				.CapitalizeFirstLowercaseRest();
+
 			add.HouseNumber = int.Parse(match.Groups["HouseNumber"].Value);
 
 			var houseletter = match.Groups["HouseLetter"].Value;
 			if (!string.IsNullOrEmpty(houseletter))
-				add.HouseLetter = houseletter;
+				add.HouseLetter = houseletter.ToLower();
 
 			return add;
 		}
