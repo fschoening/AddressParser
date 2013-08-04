@@ -25,7 +25,29 @@ namespace AddressParser.NET.Impl.Parsing
 			if (!string.IsNullOrEmpty(houseletter))
 				add.HouseLetter = houseletter.ToLower();
 
+			var floorStr = match.Groups["Floor"].Value;
+
+			if (!string.IsNullOrEmpty(floorStr))
+				add.Floor = GetFloor(floorStr);
+
 			return add;
+		}
+
+		private int GetFloor(string floorStr)
+		{
+			floorStr = floorStr
+				.ToLower()
+				.Replace(".", string.Empty)
+				.Replace("sal", string.Empty)
+				.Trim();
+
+			if (floorStr.StartsWith("st"))
+				return 0;
+
+			if (floorStr.StartsWith("kl"))
+				return -1;
+
+			return int.Parse(floorStr);
 		}
 	}
 }
