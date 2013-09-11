@@ -10,7 +10,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AddressParser.NET.Tests
 {
 	[TestClass]
-	public class AddressFormatsParseTestsFloor
+	public class AddressFormatsParseTestRoomNumber
 	{
 		protected ServiceWrapper Services { get; set; }
 		protected Dictionary<string, DanishAddress> AddressAssertions { get; set; }
@@ -22,21 +22,27 @@ namespace AddressParser.NET.Tests
 		}
 
 		[TestMethod]
-		public void GroundFloorAddress()
+		public void GroundFloorWithRoomNumber()
 		{
 			var testAddressStrings = new List<string>
 				{
-					"Testvej 10, st.",
-					"Testvej 10, ST",
-					"Testvej 10, s.t.",
-					"Testvej 10 stuen"
+					"AGNES HENNINGSENS VEJ 7  ST149",
+					"AGNES HENNINGSENS VEJ 7  ST. 149",
+					"Agnes Henningsens Vej 7,  st. dør 149",
+					"Agnes Henningsens Vej 7 s.t. 149",
+					"Agnes Henningsens Vej 7 st, nr. 149",
+					"Agnes Henningsens Vej 7 ST lejlighed 149",
+					"Agnes Henningsens Vej 7 st. lejl. 149",
+					"Agnes Henningsens Vej 7 st. dør 149",
+					"Agnes Henningsens Vej 7 st. dør. 149"
 				};
 
 			var assertedAddress = new DanishAddress
 			{
-				StreetName = "Testvej",
-				HouseNumber = 10,
-				Floor = 0
+				StreetName = "Agnes Henningsens Vej",
+				HouseNumber = 7,
+				Floor = 0,
+				DoorOrRoomNo = 149
 			};
 
 			foreach (var testAddressString in testAddressStrings)
@@ -47,22 +53,24 @@ namespace AddressParser.NET.Tests
 		}
 
 		[TestMethod]
-		public void BasementAddress()
+		public void FloorNumberAndRoomNumber()
 		{
 			var testAddressStrings = new List<string>
 				{
-					"Testvej 10, kl.",
-					"Testvej 10, kld",
-					"Testvej 10, kld.",
-					"Testvej 10, kldr.",
-					"Testvej 10, -1"
+					"Testvej 10, 04-02",
+					"Testvej 10, 4.2",
+					"Testvej 10.4.2",
+					"Testvej 10 4 2",
+					"Testvej 10 4 Dør: 0002",
+					"Testvej 10 4. sal dør 2"
 				};
 
 			var assertedAddress = new DanishAddress
 			{
 				StreetName = "Testvej",
 				HouseNumber = 10,
-				Floor = -1
+				Floor = 4,
+				DoorOrRoomNo = 2
 			};
 
 			foreach (var testAddressString in testAddressStrings)
@@ -72,30 +80,6 @@ namespace AddressParser.NET.Tests
 			}
 		}
 
-		[TestMethod]
-		public void FloorAddress()
-		{
-			var testAddressStrings = new List<string>
-				{
-					"Testvej 10, 4. sal",
-					//"Testvej 10, 4. th.",
-					//"Testvej 10-04",
-					"Testvej 10, 4",
-					"Testvej 10., 4."
-				};
 
-			var assertedAddress = new DanishAddress
-			{
-				StreetName = "Testvej",
-				HouseNumber = 10,
-				Floor = 4
-			};
-
-			foreach (var testAddressString in testAddressStrings)
-			{
-				var testAddress = Services.DefaultIAddressParseService.ParseAddress(testAddressString);
-				Assert.AreEqual(assertedAddress, testAddress);
-			}
-		}
 	}
 }
