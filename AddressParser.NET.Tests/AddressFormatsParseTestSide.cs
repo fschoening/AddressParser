@@ -58,6 +58,7 @@ namespace AddressParser.NET.Tests
 					"Testvej 10b, 3. mf",
 					"Testvej 10b, 3. sal, MF",
 					"Testvej 10b, 3 mf",
+					"Testvej 10b 3sal mf."
 				};
 
 			var assertedAddress = new DanishAddress

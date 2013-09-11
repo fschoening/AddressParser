@@ -62,7 +62,9 @@ namespace AddressParser.NET.Tests
 					"Testvej 10.4.2",
 					"Testvej 10 4 2",
 					"Testvej 10 4 Dør: 0002",
-					"Testvej 10 4. sal dør 2"
+					"Testvej 10 4. sal dør 2",
+					"Testvej 10 .4 -2",
+					"Testvej 10 4, nr. 2"
 				};
 
 			var assertedAddress = new DanishAddress
