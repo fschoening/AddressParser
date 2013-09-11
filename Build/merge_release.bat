@@ -1,1 +1,1 @@
-ilmerge /out:AddressParser.NET.dll ../AddressParser.NET.Impl/bin/Release/AddressParser.NET.Core.dll ../AddressParser.NET.Impl/bin/Release/AddressParser.NET.Model.dll ../AddressParser.NET.Impl/bin/Release/AddressParser.NET.Impl.dll
+ilmerge /out:AddressParser.NET.dll ../AddressParser.NET.Impl/bin/Release/AddressParser.NET.Impl.dll ../AddressParser.NET.Impl/bin/Release/AddressParser.NET.Core.dll ../AddressParser.NET.Impl/bin/Release/AddressParser.NET.Model.dll
