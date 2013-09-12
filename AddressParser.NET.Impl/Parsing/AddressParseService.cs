@@ -66,10 +66,19 @@ namespace AddressParser.NET.Impl.Parsing
 				.Replace(" ", string.Empty);
 
 			ApartmentSide side;
-			if (Enum.TryParse(sideStr, true, out side))
-				return side;
+			//if (Enum.TryParse(sideStr, true, out side))
+				//return side;
 
-			throw new NotImplementedException(string.Format("No handler for parsing the side '{0}'", sideStrArg));
+			try
+			{
+				side = (ApartmentSide) Enum.Parse(typeof (ApartmentSide), sideStr, true);
+			}
+			catch (Exception) //For now, just treat all errors here as handling not implemented
+			{
+				throw new NotImplementedException(string.Format("No handler for parsing the side '{0}'", sideStrArg));
+			}
+			return side;
+		
 		}
 
 		private int GetRoomNumber(string roomNumberStr)
