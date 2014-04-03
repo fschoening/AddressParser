@@ -25,23 +25,23 @@ namespace AddressParser.NET.Tests
 		{
 			var testAddressStrings = new List<string>
 				{
-					"AGNES HENNINGSENS VEJ 7  ST149",
-					"AGNES HENNINGSENS VEJ 7  ST. 149",
-					"Agnes Henningsens Vej 7,  st. dør 149",
-					"Agnes Henningsens Vej 7 s.t. 149",
-					"Agnes Henningsens Vej 7 st, nr. 149",
-					"Agnes Henningsens Vej 7 ST lejlighed 149",
-					"Agnes Henningsens Vej 7 st. lejl. 149",
-					"Agnes Henningsens Vej 7 st. dør 149",
-					"Agnes Henningsens Vej 7 st. dør. 149"
+					"Test Testesens Vej 7  ST151",
+					"Test Testesens Vej 7  ST. 151",
+					"Test Testesens Vej 7,  st. dør 151",
+					"TEST TESTESENS Vej 7 s.t. 151",
+					"Test Testesens Vej 7 st, nr. 151",
+					"Test Testesens Vej 7 ST lejlighed 151",
+					"Test TESTESENS Vej 7 st. lejl. 151",
+					"Test Testesens Vej 7 st. dør 151",
+					"Test Testesens Vej 7 st. dør. 151"
 				};
 
 			var assertedAddress = new DanishAddress
 			{
-				StreetName = "Agnes Henningsens Vej",
+				StreetName = "Test Testesens Vej",
 				HouseNumber = 7,
 				Floor = 0,
-				DoorOrRoomNo = 149
+				DoorOrRoomNo = 151
 			};
 
 			foreach (var testAddressString in testAddressStrings)

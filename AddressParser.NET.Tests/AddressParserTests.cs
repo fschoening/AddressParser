@@ -23,6 +23,7 @@ namespace AddressParser.NET.Tests
 		//[TestMethod]
 		public void TestParseSampleAddresses()
 		{
+			//Hi mom
 			var testAddresses = Services.DefaultITestDataLoader.GetTestAddresses(@"D:\Schoening.it\_stuff\test_adresser_01.txt");
 
 			foreach (var testAddress in testAddresses)
